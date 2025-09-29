@@ -63,12 +63,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script
-          async
+        <script 
+          async 
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6354681495028216"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+        ></script>
         <Script
           id="adsense-init"
           strategy="afterInteractive"
