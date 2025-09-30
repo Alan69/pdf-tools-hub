@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pdf-tools-hub.vercel.app/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin or private areas (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow all PDF tools
+Allow: /merge-pdf
+Allow: /split-pdf
+Allow: /rotate-pdf
+Allow: /compress-pdf
