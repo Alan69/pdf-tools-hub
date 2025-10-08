@@ -109,8 +109,92 @@ export default function RotatePDF() {
       title="Rotate PDF Online Free"
       description="Rotate PDF pages in any direction. Rotate all pages or individual pages. No registration required. Secure PDF rotation tool."
     >
-      <div className="bg-white rounded-xl shadow-lg p-8">
-        <div className="mb-8">
+      <div className="space-y-8">
+        {/* Introduction Section */}
+        <div className="bg-white rounded-xl shadow-lg p-8">
+          <h1 className="text-3xl font-bold text-gray-900 mb-6">Rotate PDF Pages Online</h1>
+          <div className="prose prose-lg max-w-none text-gray-700">
+            <p className="text-xl mb-6">
+              Rotate PDF pages in any direction quickly and securely. Our free PDF rotation tool allows you to rotate all pages at once or customize individual page rotations.
+            </p>
+            
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Why Rotate PDF Pages?</h2>
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li><strong>Fix Scanned Documents:</strong> Correct pages that were scanned upside down or sideways</li>
+              <li><strong>Improve Readability:</strong> Rotate pages to the correct orientation for better viewing</li>
+              <li><strong>Professional Presentation:</strong> Ensure all pages are properly oriented before sharing</li>
+              <li><strong>Print Preparation:</strong> Rotate pages for proper printing orientation</li>
+              <li><strong>Mobile Viewing:</strong> Optimize PDF orientation for mobile device viewing</li>
+              <li><strong>Document Organization:</strong> Standardize page orientations across multiple documents</li>
+            </ul>
+
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Rotation Options</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h3 className="font-semibold text-blue-900 mb-3">Rotate All Pages</h3>
+                <p className="text-blue-800 mb-3">Apply the same rotation to every page in the document.</p>
+                <ul className="text-blue-700 text-sm space-y-1">
+                  <li>• 90° Clockwise rotation</li>
+                  <li>• 180° rotation (upside down)</li>
+                  <li>• 90° Counter-clockwise rotation</li>
+                  <li>• Perfect for uniform corrections</li>
+                </ul>
+              </div>
+              <div className="bg-green-50 p-6 rounded-lg">
+                <h3 className="font-semibold text-green-900 mb-3">Rotate Individual Pages</h3>
+                <p className="text-green-800 mb-3">Customize rotation for each page separately.</p>
+                <ul className="text-green-700 text-sm space-y-1">
+                  <li>• Different rotation per page</li>
+                  <li>• Mix of orientations</li>
+                  <li>• Selective page correction</li>
+                  <li>• Maximum flexibility</li>
+                </ul>
+              </div>
+            </div>
+
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">How to Rotate PDF Pages</h2>
+            <ol className="list-decimal pl-6 mb-6 space-y-2">
+              <li><strong>Upload PDF:</strong> Select your PDF file using the upload area</li>
+              <li><strong>Choose Rotation Mode:</strong> Select &quot;Rotate all pages&quot; or &quot;Rotate individual pages&quot;</li>
+              <li><strong>Set Rotation:</strong> Choose the rotation angle (90°, 180°, 270°, or 0°)</li>
+              <li><strong>Apply Rotation:</strong> Click &quot;Rotate PDF&quot; to process your document</li>
+              <li><strong>Download:</strong> Download your rotated PDF file</li>
+            </ol>
+
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Common Use Cases</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div className="bg-purple-50 p-4 rounded-lg">
+                <h3 className="font-semibold text-purple-900 mb-2">Scanned Documents</h3>
+                <p className="text-purple-800 text-sm">Fix pages that were scanned in the wrong orientation.</p>
+              </div>
+              <div className="bg-orange-50 p-4 rounded-lg">
+                <h3 className="font-semibold text-orange-900 mb-2">Mobile Scans</h3>
+                <p className="text-orange-800 text-sm">Correct documents scanned with mobile devices.</p>
+              </div>
+              <div className="bg-red-50 p-4 rounded-lg">
+                <h3 className="font-semibold text-red-900 mb-2">Presentation Prep</h3>
+                <p className="text-red-800 text-sm">Ensure all pages are properly oriented for presentations.</p>
+              </div>
+              <div className="bg-teal-50 p-4 rounded-lg">
+                <h3 className="font-semibold text-teal-900 mb-2">Print Optimization</h3>
+                <p className="text-teal-800 text-sm">Rotate pages for proper printing orientation.</p>
+              </div>
+            </div>
+
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Tips for Best Results</h2>
+            <ul className="list-disc pl-6 mb-6 space-y-2">
+              <li>Use &quot;Rotate all pages&quot; for documents with consistent orientation issues</li>
+              <li>Use &quot;Rotate individual pages&quot; for mixed orientation documents</li>
+              <li>90° clockwise rotation is most common for scanned documents</li>
+              <li>180° rotation flips pages upside down</li>
+              <li>270° rotation is equivalent to 90° counter-clockwise</li>
+              <li>Preview the results before downloading to ensure correct orientation</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Tool Interface */}
+        <div className="bg-white rounded-xl shadow-lg p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Upload PDF to Rotate
           </h2>
@@ -321,18 +405,18 @@ export default function RotatePDF() {
           />
         )}
 
-        {/* AdSense Slot */}
-        <div className="mt-8 text-center">
-          <div className="mx-auto max-w-2xl">
-            <ins className="adsbygoogle"
-                 style={{display: 'block'}}
-                 data-ad-client="ca-pub-6354681495028216"
-                 data-ad-slot="3909950379"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
+          {/* AdSense Slot */}
+          <div className="mt-8 text-center">
+            <div className="mx-auto max-w-2xl">
+              <ins className="adsbygoogle"
+                   style={{display: 'block'}}
+                   data-ad-client="ca-pub-6354681495028216"
+                   data-ad-slot="3909950379"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+            </div>
           </div>
         </div>
-      </div>
     </Layout>
   );
 }

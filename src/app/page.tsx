@@ -77,6 +77,12 @@ export default function Home() {
               <Link href="/compress-pdf" className="text-gray-600 hover:text-gray-900 font-medium">
                 Compress PDF
               </Link>
+              <Link href="/about" className="text-gray-600 hover:text-gray-900 font-medium">
+                About
+              </Link>
+              <Link href="/faq" className="text-gray-600 hover:text-gray-900 font-medium">
+                FAQ
+              </Link>
             </nav>
           </div>
         </div>
@@ -152,6 +158,86 @@ export default function Home() {
                 </div>
               );
             })}
+          </div>
+        </div>
+
+        {/* PDF Tools Benefits Section */}
+        <div className="bg-white rounded-xl shadow-lg p-8 mb-16">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+            Essential PDF Tools for Everyone
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">
+                  1
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-2">Merge PDF Files</h3>
+                  <p className="text-gray-600 text-sm">
+                    Combine multiple PDF documents into one file. Perfect for creating comprehensive reports, 
+                    merging contracts, or organizing related documents. Upload up to 20 files and arrange them in your preferred order.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <div className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">
+                  2
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-2">Split PDF Documents</h3>
+                  <p className="text-gray-600 text-sm">
+                    Extract specific pages or split PDFs into multiple files. Choose page ranges or split into individual pages. 
+                    Ideal for extracting chapters, separating invoices, or creating individual documents from large files.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">
+                  3
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-2">Compress PDF Files</h3>
+                  <p className="text-gray-600 text-sm">
+                    Reduce file size without losing quality. Choose from three compression levels to optimize your documents 
+                    for email attachments, web uploads, or storage. See exact size reduction percentages.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <div className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0">
+                  4
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-2">Rotate PDF Pages</h3>
+                  <p className="text-gray-600 text-sm">
+                    Fix scanned documents or adjust page orientation. Rotate all pages at once or customize individual page rotations. 
+                    Perfect for correcting documents scanned upside down or sideways.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="space-y-6">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Perfect for:</h3>
+              <div className="space-y-4">
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-blue-900 mb-2">Business Professionals</h4>
+                  <p className="text-blue-800 text-sm">Merge contracts, compress reports for email, split large documents for easier sharing.</p>
+                </div>
+                <div className="bg-green-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-green-900 mb-2">Students & Academics</h4>
+                  <p className="text-green-800 text-sm">Combine research papers, extract specific chapters, optimize files for submission.</p>
+                </div>
+                <div className="bg-purple-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-purple-900 mb-2">Legal Professionals</h4>
+                  <p className="text-purple-800 text-sm">Merge court documents, split case files, compress briefs for filing.</p>
+                </div>
+                <div className="bg-orange-50 p-4 rounded-lg">
+                  <h4 className="font-semibold text-orange-900 mb-2">Personal Use</h4>
+                  <p className="text-orange-800 text-sm">Organize scanned documents, compress photos, rotate pages for better viewing.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -232,9 +318,11 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">About</h4>
               <ul className="space-y-2 text-gray-400">
+                <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
                 <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
                 <li><Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link></li>
                 <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+                <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
               </ul>
             </div>
           </div>
